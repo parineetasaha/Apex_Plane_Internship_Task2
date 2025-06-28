@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task_2.css">
+</head>
+
+<body>
+    <nav class="main-navbar">
+        <div class="navbar-container">
+            <div class="navbar-title">My Intermediate Web Development Project</div>
+            <ul class="navbar-links">
+                <li><a href="#contact-section">Contact</a></li>
+                <li><a href="#todo-section">To-Do List</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="vertical-container">
+        <div class="contact-section" id="contact-section">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <label>Name: <input type="text" name="name" required></label><br>
+                <label>Email: <input type="email" name="email" required></label><br>
+                <button type="submit" class="main-btn">Submit</button>
+            </form>
+        </div>
+        <div class="todo-section" id="todo-section">
+            <h2>To-Do List</h2>
+            <div class="todo-input-row">
+                <input type="text" id="taskInput" placeholder="Add a task">
+                <button id="addTask" class="main-btn">Add</button>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="task_2.js"></script>
+</body>
+
+</html>
